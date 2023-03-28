@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TimeLine from '../components/TimeLine.astro';
+---
+
+<Layout title="Education">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">Education</div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+        <TimeLine
+          title="BTech in Computer Science & Engineering and Engineering Science"
+          subtitle="From 2018 to 2022 at Indian Institute of Technology, Hyderabad"
+          grade="9.41 CGPA"
+        />
+        <TimeLine
+          title="Minor in Entrepreneurship"
+          subtitle="From 2020 to 2022 at Indian Institute of Technology, Hyderabad "
+          grade="9.67 CGPA"
+        />
+        <TimeLine
+          title="Intermediate in MPC"
+          subtitle="From 2018 to 2022 at Sri Chaitanya Junior College, Hyderabad"
+          grade="980/1000"
+        />
+    </div>
+
+</Layout>

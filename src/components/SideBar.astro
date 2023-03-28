@@ -12,10 +12,11 @@
       </div>
       <ul class="grow shrink">
         <li><a id="home" href="/">Home</a></li>
+        <li><a id="education" href="/education">Education</a></li>
+        <li><a id="experience" href="/experience">Experience</a></li>
         <li><a id="projects" href="/projects">Projects</a></li>
         <li><a id="publications" href="/publications">Publications</a></li>
         <li><a id="skills" href="/skills">Skills</a></li>
-        <li><a id="cv" href="/cv">CV</a></li>
         <li><a href="mailto:reethu.vinta@gmail.com">Contact</a></li>
       </ul>
       <div class="social-icons px-4 my-2 flex self-center">
@@ -57,16 +58,17 @@
 
 <script>
     const homeLink = document.getElementById("home");
+    const educationLink = document.getElementById("education");
+    const experienceLink = document.getElementById("experience");
     const projectsLink = document.getElementById("projects");
     const publicationsLink = document.getElementById("publications");
     const skillsLink = document.getElementById("skills");
-    const cvLink = document.getElementById("cv");
   
     var isHome = true;
   
     const url = window.location.href;
   
-    const pages = [projectsLink, publicationsLink, skillsLink, cvLink];
+    const pages = [projectsLink, educationLink, experienceLink, publicationsLink, skillsLink];
   
     const activeClass = "bg-base-300"; // For primary color replace with `active` class
   

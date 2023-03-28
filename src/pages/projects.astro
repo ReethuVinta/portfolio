@@ -1,0 +1,51 @@
+---
+import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Projects">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">Projects</div>
+    </div>
+
+    <Card
+    title="Secure Chat Application and Simulation of MITM, Downgrade attacks"
+    img="/secure_chat.jpeg"
+    desc="Implemented a secure chat application that uses TCP, and TLS for reliable communication between client and server. For implementing this we have used python's SSL, socket, and OpenSSL packages."
+    url="#"
+    target="_blank"
+    />
+
+    <div class="divider my-0"></div>
+
+    <Card
+    title="Designing a database for IMDb dataset"
+    img="/imdb.png"
+    desc="Designed a flexible and efficient relational database using PostgreSQL for movies and series from IMDB datasets. Developed informative ER diagrams and flexible relational table schemas that meet the majority of the requirements for common queries."
+    url="https://github.com/ReethuVinta/DBMS"
+    target="_blank"
+    />
+
+    <div class="divider my-0"></div>
+
+    <Card
+    title="Stoichy"
+    img="/stoichy.jpeg"
+    desc="Stoichy is a Domain Specific Language(DSL) for balancing Complex Chemical Equations. This is written in Ocaml, Python and is compiled to Java"
+    url="https://github.com/akashtadwai/stoichy"
+    target="_blank"
+    />
+
+    <div class="divider my-0"></div>
+
+    <Card
+    title="Human Emotion Recognition"
+    img="/her.jpeg"
+    desc="Tried predicting emotion using audio, image frames in the video. Built a robust model for human emotion recognition using visual features obtained from video using Transfer Learning. Passed these obtained features into LSTM architecture and predicted the emotion."
+    url="https://github.com/ReethuVinta/Interface_HER"
+    target="_blank"
+    />
+
+    <div class="divider my-0"></div>
+
+</Layout>

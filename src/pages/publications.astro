@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+    
+const { url="https://ieeexplore.ieee.org/document/9668482", desc="Studied the impact of class imbalance on task ordering and its effect on the design of CL-based A-NIDS inthe Class Incremental and Domain Incremental settings.", target="_blank"} = Astro.props;
+---
+
+<Layout title="Publications">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">Publications</div>
+    </div>
+
+    <div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+        <a href={url} target={target}>
+          <div class="hero-content flex-col md:flex-row">
+            <div class="grow w-full">
+              <h1 class="text-xl">
+                  Suresh Kumar Amalapuram, Akash Tadwai, <b>Reethu Vinta</b>,  Sumohana S. Channappayya, Bheemarjuna Reddy Tamma <br>  <b>Continual Learning for Anomaly based Network Intrusion Detection COMSNET 2022</b>
+                  <!-- {title} -->
+              </h1>
+              <p class="py-1 text-1xl">{desc}</p>
+              <a class="w-20 btn mt-3" target="_blank" href="https://github.com/ReethuVinta/AnomalyDetection">
+                  Paper</a>
+              <a class="w-20 btn mt-3" target="_blank" href="https://github.com/ReethuVinta/AnomalyDetection">
+                  Code</a>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+</Layout>
